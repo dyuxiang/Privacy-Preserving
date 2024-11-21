@@ -24,9 +24,9 @@ Begin with preprocessing the dataset. This involves removing unnecessary columns
 
 Apply the following privacy preservation techniques to the preprocessed data:
 
-k-Anonymity: Implement k-anonymity to protect personal information by making each record indistinguishable from at least k-1 other records.
-k-Anonymity + l-Diversity: Enhance privacy by adding l-diversity to k-anonymity, ensuring that sensitive attributes have a diverse range of values.
-k-Anonymity + l-Diversity + t-Closeness: Further improve privacy by incorporating t-closeness, which maintains the distribution of sensitive attributes within a certain threshold.
+- k-Anonymity: Implement k-anonymity to protect personal information by making each record indistinguishable from at least k-1 other records.
+- k-Anonymity + l-Diversity: Enhance privacy by adding l-diversity to k-anonymity, ensuring that sensitive attributes have a diverse range of values.
+- k-Anonymity + l-Diversity + t-Closeness: Further improve privacy by incorporating t-closeness, which maintains the distribution of sensitive attributes within a certain threshold.
 
 3.Machine Learning Model Training and Evaluation
 
@@ -35,6 +35,6 @@ Train and evaluate the data using Multi-Layer Perceptron (MLP) and Support Vecto
 
 
 ## Contact
-Ding Yu Xiang - [Email Address](Gmail:dyx2000803a@gmail.com)
+Ding Yu Xiang - [dyx2000803a@gmail.com](Gmail:dyx2000803a@gmail.com)
 
 Project Link: [https://github.com/dyuxiang/](https://github.com/dyuxiang/Privacy-Preserving)
