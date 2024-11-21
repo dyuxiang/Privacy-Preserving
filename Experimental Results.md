@@ -22,7 +22,7 @@ This study evaluates the impact of privacy-preserving methods (k-Anonymity, l-Di
 
 ---
 
-### 2. Accuracy under k-Anonymity + l-Diversity**
+### 2. Accuracy under k-Anonymity + l-Diversity
 
 | K    | L  | MLP Accuracy (%) | SVM Accuracy (%) |
 |------|----|------------------|------------------|
@@ -46,7 +46,7 @@ This study evaluates the impact of privacy-preserving methods (k-Anonymity, l-Di
 
 ---
 
-### 3. Performance under t-Closeness
+### 3. Performance under k-Anonymity + l-Diversity + t-Closeness
 
 ## 1. Fixed K-Value (K = 5)
 
