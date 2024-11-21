@@ -5,6 +5,9 @@ This study evaluates the impact of privacy-preserving methods (k-Anonymity, l-Di
 ---
 
 ### 1. Accuracy under k-Anonymity
+<div style="display: flex; align-items: center;">
+
+<div style="flex: 1;">
 
 | Privacy Parameter | MLP Accuracy (%) | SVM Accuracy (%) |
 |-------------------|------------------|------------------|
@@ -16,6 +19,17 @@ This study evaluates the impact of privacy-preserving methods (k-Anonymity, l-Di
 | k = 1000          | 80.29           | 77.96           |
 | k = 2000          | 78.63           | 76.78           |
 
+</div>
+
+<div style="flex: 1; text-align: center;">
+
+![k-Anonymity Accuracy](https://github.com/dyuxiang/Privacy-Preserving/blob/main/Figure/compare_k.png)
+
+*Figure 1: Accuracy under k-Anonymity.*
+
+</div>
+
+</div>
 **Key Observations**:
 - Both MLP and SVM models show a gradual decline in accuracy as the privacy parameter (k-value) increases, indicating that stricter privacy preservation reduces model performance.
 - The performance degradation in SVM is slightly more pronounced compared to MLP.
