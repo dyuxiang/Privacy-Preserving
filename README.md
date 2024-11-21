@@ -82,7 +82,7 @@ To evaluate the impact of these privacy techniques on data utility:
 3. **Train Machine Learning Models**:
    - Use MLP and SVM to evaluate data utility after applying privacy-preserving techniques.
 4. **Compare Results**: Analyze the trade-offs between privacy protection and model performance.
-
+  - Detailed results and analysis can be found [here](https://github.com/dyuxiang/Privacy-Preserving/blob/main/Experimental%20Results.md).
 ---
 
 ## Contact
