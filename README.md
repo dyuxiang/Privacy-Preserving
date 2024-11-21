@@ -1,4 +1,5 @@
-# Privacy-Preserving Methods: k-Anonymity, l-Diversity, and t-Closeness
+# Privacy-Preserving Methods: 
+# k-Anonymity, l-Diversity, and t-Closeness
 
 This project explores and compares three widely-used privacy-preserving techniques: **k-Anonymity**, **l-Diversity**, and **t-Closeness**. These methods play a crucial role in protecting personal information during data sharing and analysis.
 
