@@ -2,7 +2,7 @@
 
 This project explores and compares three widely-used privacy-preserving techniques: **k-Anonymity**, **l-Diversity**, and **t-Closeness**. These methods play a crucial role in protecting personal information during data sharing and analysis.
 
----
+
 
 ## About the Project
 
@@ -22,7 +22,7 @@ By implementing and comparing these methods, the project aims to:
 
 Through this research, we aim to promote safer data management practices and enhance public awareness of data privacy protection.
 
----
+
 
 ## Methodology
 
@@ -57,7 +57,7 @@ To evaluate the impact of these privacy techniques on data utility:
 - **Models Used**: Multi-Layer Perceptron (MLP) and Support Vector Machine (SVM).
 - **Evaluation Metrics**: Accuracy, efficiency, and performance are compared across datasets with different privacy-preserving techniques applied.
 
----
+
 
 ## Paper References
 
@@ -73,7 +73,7 @@ To evaluate the impact of these privacy techniques on data utility:
 - Ninghui Li, Tiancheng Li, and Suresh Venkatasubramaniam, "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity," in *Proceedings of the 23rd International Conference on Data Engineering (ICDE)*, IEEE, 2007.  
   [Read the paper](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf)
 
----
+
 
 ## Steps to Reproduce
 
