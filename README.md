@@ -1,40 +1,100 @@
-# Privacy Preserving methods based on “k-anonymity”, “l-Diversity” and “t-Closeness” algorithm
+# Privacy-Preserving Methods: k-Anonymity, l-Diversity, and t-Closeness
 
-This project aims to implement and compare three widely used privacy-preserving techniques: k-Anonymity, l-Diversity, and t-Closeness. These methods are essential for protecting personal information during data sharing and analysis.
+This project explores and compares three widely-used privacy-preserving techniques: **k-Anonymity**, **l-Diversity**, and **t-Closeness**. These methods play a crucial role in protecting personal information during data sharing and analysis.
+
+---
 
 ## About the Project
-In today's digital age, data privacy protection has become increasingly important. With the widespread adoption of data sharing and big data analytics, maintaining data utility while safeguarding personal privacy presents a significant challenge. This project explores and compares three commonly used privacy-preserving techniques: k-Anonymity, l-Diversity, and t-Closeness, to address this challenge.
-These methods are widely applied in data privacy protection to prevent the disclosure of personal information. The project provides theoretical background, implementation details, and performance evaluation of these techniques on various datasets. This helps users choose the most suitable privacy protection strategy. Through this research, we aim to promote safer data management practices and enhance public awareness of data privacy protection.
 
-## Method / Paper References
+In today's digital age, protecting data privacy has become more critical than ever. With the growing reliance on data sharing and big data analytics, maintaining the balance between data utility and privacy poses significant challenges.
 
-- **k-Anonymity**: K. LeFevre, D. J. DeWitt, and R. Ramakrishnan, "Mondrian Multidimensional k-Anonymity," in Proceedings of the 22nd International Conference on Data Engineering (ICDE), 2006. [[Paper]](https://personal.utdallas.edu/~mxk055100/courses/privacy08f_files/MultiDim.pdf)
+This project delves into three prominent privacy-preserving techniques to address these challenges:
 
-- **l-Diversity**: A. Machanavajjhala, J. Gehrke, D. Kifer, and M. Venkitasubramaniam, "l-Diversity: Privacy Beyond k-Anonymity," in Proceedings of the 22nd International Conference on Data Engineering (ICDE), IEEE, 2006. [[Paper]](https://personal.utdallas.edu/~muratk/courses/privacy08f_files/ldiversity.pdf)
+- **k-Anonymity**
+- **l-Diversity**
+- **t-Closeness**
 
-- **t-Closeness**: Ninghui Li, Tiancheng Li, and Suresh Venkatasubramaniam, "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity," in Proceedings of the 23rd International Conference on Data Engineering (ICDE), IEEE, 2007. [[Paper]](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf)
+By implementing and comparing these methods, the project aims to:
 
+1. **Safeguard Personal Information**: Prevent the disclosure of sensitive data while maintaining data usability.
+2. **Provide Implementation Insights**: Offer theoretical background, practical implementation, and performance evaluation.
+3. **Guide Privacy Strategy Selection**: Help users choose the most suitable privacy-preserving method for their needs.
 
-### Steps
-1.Data Preprocessing
+Through this research, we aim to promote safer data management practices and enhance public awareness of data privacy protection.
 
-Begin with preprocessing the dataset. This involves removing unnecessary columns and handling missing data by eliminating incomplete entries. Ensure the data is clean and consistent for further analysis and processing.
+---
 
-2.Privacy Preservation Techniques
+## Methodology
 
-Apply the following privacy preservation techniques to the preprocessed data:
+### 1. Data Preprocessing
 
-- k-Anonymity: Implement k-anonymity to protect personal information by making each record indistinguishable from at least k-1 other records.
-- k-Anonymity + l-Diversity: Enhance privacy by adding l-diversity to k-anonymity, ensuring that sensitive attributes have a diverse range of values.
-- k-Anonymity + l-Diversity + t-Closeness: Further improve privacy by incorporating t-closeness, which maintains the distribution of sensitive attributes within a certain threshold.
+Before applying privacy-preserving techniques, the dataset undergoes preprocessing:
 
-3.Machine Learning Model Training and Evaluation
+- **Remove Unnecessary Columns**: Exclude irrelevant features.
+- **Handle Missing Data**: Eliminate incomplete entries or impute missing values.
+- **Clean and Normalize**: Ensure the data is consistent for further analysis.
 
-Train and evaluate the data using Multi-Layer Perceptron (MLP) and Support Vector Machine (SVM). This step aims to assess the impact of different privacy preservation techniques on model performance and compare the accuracy and efficiency of the models.
+### 2. Privacy Preservation Techniques
 
+The following methods are implemented on the preprocessed data:
 
+#### **k-Anonymity**
+- Makes each record indistinguishable from at least **k-1 other records** in the dataset.
+- Protects individuals by reducing the granularity of data.
+
+#### **k-Anonymity + l-Diversity**
+- Extends k-anonymity by ensuring that **sensitive attributes** have at least **l diverse values** within each anonymized group.
+- Protects against homogeneity attacks and background knowledge attacks.
+
+#### **k-Anonymity + l-Diversity + t-Closeness**
+- Further improves privacy by ensuring the **distribution of sensitive attributes** within each anonymized group is close to their distribution in the entire dataset.
+- Mitigates skewness and similarity attacks.
+
+### 3. Machine Learning Model Training and Evaluation
+
+To evaluate the impact of these privacy techniques on data utility:
+
+- **Models Used**: Multi-Layer Perceptron (MLP) and Support Vector Machine (SVM).
+- **Evaluation Metrics**: Accuracy, efficiency, and performance are compared across datasets with different privacy-preserving techniques applied.
+
+---
+
+## Paper References
+
+### **k-Anonymity**
+- K. LeFevre, D. J. DeWitt, and R. Ramakrishnan, "Mondrian Multidimensional k-Anonymity," in *Proceedings of the 22nd International Conference on Data Engineering (ICDE)*, 2006.  
+  [Read the paper](https://personal.utdallas.edu/~mxk055100/courses/privacy08f_files/MultiDim.pdf)
+
+### **l-Diversity**
+- A. Machanavajjhala, J. Gehrke, D. Kifer, and M. Venkitasubramaniam, "l-Diversity: Privacy Beyond k-Anonymity," in *Proceedings of the 22nd International Conference on Data Engineering (ICDE)*, IEEE, 2006.  
+  [Read the paper](https://personal.utdallas.edu/~muratk/courses/privacy08f_files/ldiversity.pdf)
+
+### **t-Closeness**
+- Ninghui Li, Tiancheng Li, and Suresh Venkatasubramaniam, "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity," in *Proceedings of the 23rd International Conference on Data Engineering (ICDE)*, IEEE, 2007.  
+  [Read the paper](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf)
+
+---
+
+## Steps to Reproduce
+
+1. **Preprocess the Data**: Clean the dataset and handle missing values.
+2. **Apply Privacy Techniques**: Implement k-Anonymity, l-Diversity, and t-Closeness in sequence.
+3. **Train Machine Learning Models**:
+   - Use MLP and SVM to evaluate data utility after applying privacy-preserving techniques.
+4. **Compare Results**: Analyze the trade-offs between privacy protection and model performance.
+
+---
 
 ## Contact
-Ding Yu Xiang - [dyx2000803a@gmail.com](Gmail:dyx2000803a@gmail.com)
 
-Project Link: [https://github.com/dyuxiang/](https://github.com/dyuxiang/Privacy-Preserving)
+For any questions or feedback, feel free to reach out:
+
+- **Name**: Ding Yu Xiang  
+- **Email**: [dyx2000803a@gmail.com](mailto:dyx2000803a@gmail.com)  
+- **GitHub**: [dyuxiang](https://github.com/dyuxiang/Privacy-Preserving)
+
+---
+
+## Project Link
+
+[Explore the Repository](https://github.com/dyuxiang/Privacy-Preserving)
