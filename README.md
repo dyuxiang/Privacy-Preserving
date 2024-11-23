@@ -30,17 +30,17 @@ Before applying privacy-preserving techniques, the dataset is cleaned and prepar
 
 The project implements the following methods sequentially:
 
-##### **k-Anonymity**
-- Ensures that each record is indistinguishable from at least **k-1 other records**.
-- Reduces data granularity to protect individuals.
+- **k-Anonymity**
+  - Ensures that each record is indistinguishable from at least **k-1 other records**.
+  - Reduces data granularity to protect individuals.
 
-##### **k-Anonymity + l-Diversity**
-- Extends k-anonymity by ensuring that **sensitive attributes** have at least **l diverse values** in each anonymized group.
-- Guards against homogeneity and background knowledge attacks.
+- **k-Anonymity + l-Diversity**
+  - Extends k-anonymity by ensuring that **sensitive attributes** have at least **l diverse values** in each anonymized group.
+  - Guards against homogeneity and background knowledge attacks.
 
-##### **k-Anonymity + l-Diversity + t-Closeness**
-- Adds t-closeness, ensuring the **distribution of sensitive attributes** within each group closely matches the dataset’s overall distribution.
-- Prevents skewness and similarity attacks.
+- **k-Anonymity + l-Diversity + t-Closeness**
+  - Adds t-closeness, ensuring the **distribution of sensitive attributes** within each group closely matches the dataset’s overall distribution.
+  - Prevents skewness and similarity attacks.
 
 #### **3. Model Training and Evaluation**
 
@@ -53,17 +53,17 @@ To assess the impact of privacy-preserving techniques on data utility:
 
 ### 📜 References
 
-#### **k-Anonymity**
-- **Paper**: K. LeFevre, D. J. DeWitt, and R. Ramakrishnan, "Mondrian Multidimensional k-Anonymity."  
-  [Read the paper](https://personal.utdallas.edu/~mxk055100/courses/privacy08f_files/MultiDim.pdf)
+- **k-Anonymity**
+  - **Paper**: K. LeFevre, D. J. DeWitt, and R. Ramakrishnan, "Mondrian Multidimensional k-Anonymity." ->
+  [Paper](https://personal.utdallas.edu/~mxk055100/courses/privacy08f_files/MultiDim.pdf)
 
-#### **l-Diversity**
-- **Paper**: A. Machanavajjhala et al., "l-Diversity: Privacy Beyond k-Anonymity."  
-  [Read the paper](https://personal.utdallas.edu/~muratk/courses/privacy08f_files/ldiversity.pdf)
+- **l-Diversity**
+  - **Paper**: A. Machanavajjhala et al., "l-Diversity: Privacy Beyond k-Anonymity." ->
+  [Paper](https://personal.utdallas.edu/~muratk/courses/privacy08f_files/ldiversity.pdf)
 
-#### **t-Closeness**
-- **Paper**: Ninghui Li et al., "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity."  
-  [Read the paper](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf)
+- **t-Closeness**
+  - **Paper**: Ninghui Li et al., "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity." ->
+  [Paper](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf)
 
 ---
 
