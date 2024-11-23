@@ -54,15 +54,15 @@ To assess the impact of privacy-preserving techniques on data utility:
 ### 📜 References
 
 - **k-Anonymity**
-  - **Paper**: K. LeFevre, D. J. DeWitt, and R. Ramakrishnan, "Mondrian Multidimensional k-Anonymity." ->
+  - **Paper**: LeFevre, Kristen, David J. DeWitt, and Raghu Ramakrishnan. "Mondrian multidimensional k-anonymity." 22nd International conference on data engineering (ICDE'06). IEEE, 2006. ->
   [Paper](https://personal.utdallas.edu/~mxk055100/courses/privacy08f_files/MultiDim.pdf)
 
 - **l-Diversity**
-  - **Paper**: A. Machanavajjhala et al., "l-Diversity: Privacy Beyond k-Anonymity." ->
+  - **Paper**: Machanavajjhala, Ashwin, et al. "l-diversity: Privacy beyond k-anonymity." Acm transactions on knowledge discovery from data (tkdd) 1.1 (2007): 3-es. ->
   [Paper](https://personal.utdallas.edu/~muratk/courses/privacy08f_files/ldiversity.pdf)
 
 - **t-Closeness**
-  - **Paper**: Ninghui Li et al., "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity." ->
+  - **Paper**: Li, Ninghui, Tiancheng Li, and Suresh Venkatasubramanian. "t-closeness: Privacy beyond k-anonymity and l-diversity." 2007 IEEE 23rd international conference on data engineering. IEEE, 2006. ->
   [Paper](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf)
 
 ---
